@@ -56,9 +56,9 @@ body {
 }
 
 .clash-card__image--UM_STAFF img {
-  width: 150px;
-  top: 75px;
-  left: 70px;
+  width: 250px;
+  top: 20px;
+  left: 20px;
   position: absolute;
 }
 

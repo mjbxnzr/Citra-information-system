@@ -4,9 +4,8 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8c7a7a), color-stop(65%, #af877c), to(#af877c)) fixed;
-  background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
+  
+  background-image: linear-gradient(to right top, #670552, #8a2a72, #ad4893, #d267b7, #f886db);
   background-size: cover;
   font: 14px/20px "Lato", Arial, sans-serif;
   color: #9E9E9E;
@@ -20,8 +19,9 @@ body {
 }
 
 .wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding:40px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .wrapper:focus {
   outline: 0;
@@ -30,13 +30,13 @@ body {
 .clash-card {
   background: white;
   width: 300px;
-  display: inline-block;
+  display: grid;
   margin: auto;
   border-radius: 19px;
-  position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
   z-index: 9999;
+  
 }
 
 .clash-card__image {
@@ -47,16 +47,25 @@ body {
   border-top-right-radius: 14px;
 }
 
-.clash-card__image--barbarian {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
-}
-.clash-card__image--barbarian img {
+
+.clash-card__image--student img {
     width: 150px;
-    top: 30px;
+    top: 75px;
     left: 70px;
-    position: absolute;
-  
+    position: absolute; 
 }
+
+.clash-card__image--UM_STAFF img {
+  width: 150px;
+  top: 75px;
+  left: 70px;
+  position: absolute;
+}
+
+.clash-card.UM_STAFF{
+  margin-left: 40px;
+}
+
 
 .clash-card__level {
   text-transform: uppercase;
@@ -65,7 +74,11 @@ body {
   margin-bottom: 3px;
 }
 
-.clash-card__level--barbarian {
+.clash-card__level--student {
+  color: #EC9B3B;
+}
+
+.clash-card__level--UM_STAFF {
   color: #EC9B3B;
 }
 
@@ -82,10 +95,16 @@ body {
   margin-bottom: 10px;
 }
 
-.clash-card__unit-stats--barbarian {
+.clash-card__unit-stats--student {
   background: #EC9B3B;
 }
-.clash-card__unit-stats--barbarian .one-third {
+.clash-card__unit-stats--student .one-third {
+  border-right: 1px solid #BD7C2F;
+}
+.clash-card__unit-stats--UM_STAFF {
+  background: #EC9B3B;
+}
+.clash-card__unit-stats--UM_STAFF .one-third {
   border-right: 1px solid #BD7C2F;
 }
 

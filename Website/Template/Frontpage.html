@@ -29,9 +29,10 @@
                 <div class="clash-card__image clash-card__image--UM_STAFF">
                     <img src="{%static 'icon/staff.png'%}">
                 </div>
-                <div class="clash-card__unit-description">
-                  University Malaya Staff are able to view FAQ section and download the required document from CiTra
+                <div class="clash-card__unit-description" id="STAFF">
+                  <p>{{ STAFF_DESC }}</p>
                 </div>
+                <script src="https://cdn.jsdelivr.net/npm/vue"></script>
           
                 <div class="clash-card__unit-stats clash-card__unit-stats--UM_STAFF clearfix">
                   <div class="one-third">
@@ -46,5 +47,6 @@
             
             
           </div> <!-- end container -->
+          <script src="{% static 'javascript/main.js'%}"></script>
     </body>
 </html>

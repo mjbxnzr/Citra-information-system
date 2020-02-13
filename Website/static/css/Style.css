@@ -13,7 +13,7 @@ body {
 }
 
 .slide-container {
-  margin: 10px;
+  margin-left: 10%;
   width: 600px;
   text-align: center;
 }
@@ -31,7 +31,7 @@ body {
   background: white;
   width: 300px;
   display: grid;
-  margin: auto;
+  margin: 20px 20px;
   border-radius: 19px;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
@@ -61,6 +61,12 @@ body {
   left: 20px;
   position: absolute;
 }
+.clash-card__image--ADMIN img {
+  width: 250px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
 
 .clash-card.UM_STAFF{
   margin-left: 40px;
@@ -81,7 +87,9 @@ body {
 .clash-card__level--UM_STAFF {
   color: #EC9B3B;
 }
-
+.clash-card__level--ADMIN {
+  color: #EC9B3B;
+}
 
 .clash-card__unit-name {
   font-size: 26px;
@@ -107,7 +115,12 @@ body {
 .clash-card__unit-stats--UM_STAFF .one-third {
   border-right: 1px solid #BD7C2F;
 }
-
+.clash-card__unit-stats--ADMIN {
+  background: #EC9B3B;
+}
+.clash-card__unit-stats--ADMIN .one-third {
+  border-right: 1px solid #BD7C2F;
+}
 
 .clash-card__unit-stats {
   color: white;

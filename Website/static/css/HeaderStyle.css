@@ -22,9 +22,12 @@
   .navigationWrapper .logoWrapper .stylish {
     font-weight: bold;
   }
+  .stylish img{
+      width: 100px;
+  }
   .navigationWrapper .logoWrapper .logo {
     padding-left: 4px;
-    color: #ea4f4c;
+    color: #cc04a1;
   }
   .navigationWrapper .navigation {
     display: flex;

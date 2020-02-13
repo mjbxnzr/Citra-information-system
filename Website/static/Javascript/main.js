@@ -14,3 +14,10 @@ var student = new Vue({
     },
     delimiters: ["[[","]]"]
 })
+var student = new Vue({
+    el: '#ADMIN',
+    data:{
+        ADMIN_DESC:'For authorised personnal only'
+    },
+    delimiters: ["[[","]]"]
+})

@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
     </head>
     <body>
+      {% include 'Header.html' %}
         <div class="slide-container">
   
             <div class="wrapper">
@@ -13,8 +14,8 @@
                 <div class="clash-card__image clash-card__image--student">
                     <img src="{%static 'icon/student.png'%}">
                 </div>
-                <div class="clash-card__unit-description">
-                  Student are able to check for class timetable that only related to CITRA subject and browse on the FAQ if you have any doubts in mind.
+                <div class="clash-card__unit-description" id="STUDENT">
+                  <p>[[ STUDENT_DESC ]]</p>
                 </div>
           
                 <div class="clash-card__unit-stats clash-card__unit-stats--student clearfix">

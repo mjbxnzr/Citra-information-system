@@ -20,4 +20,5 @@ from Dashboard import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Home/', views.Home),
+    path('Student/', views.Student),
 ]
